@@ -1,0 +1,25 @@
+{
+  "name": "use-watch",
+  "version": "0.0.1",
+  "description": "React 自定义Hook实现Vue中的watch功能",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "ssh",
+    "email": "949589855@qq.com"
+  },
+  "repository": "/use-watch",
+  "scripts": {
+    "dev": "father doc dev",
+    "build": "father build",
+    "doc:build": "father doc build"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "father": "^2.16.0",
+    "typescript": "^3.3.3"
+  },
+  "license": "MIT"
+}
