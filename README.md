@@ -4,6 +4,10 @@
 
 ## Usage
 
+```
+npm i use-watch-hook -S
+```
+
 ```ts
 import React, { useState } from 'react';
 import useWatch from '../src'
