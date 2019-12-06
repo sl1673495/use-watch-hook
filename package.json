@@ -1,7 +1,8 @@
 {
   "name": "use-watch-hook",
-  "version": "1.0.0",
-  "description": "React 自定义Hook实现Vue中的watch功能",
+  "version": "1.0.1",
+  "description": "A React Hook that use to call the callback when the dep changed",
+  "keywords":["react", "react watch", "react hook watch", "hook watch"],
   "main": "lib/index.js",
   "authors": {
     "name": "ssh",

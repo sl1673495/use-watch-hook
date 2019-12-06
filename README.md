@@ -1,6 +1,6 @@
 # use-watch
 
-通过React自定义Hook实现Vue中的watch功能
+通过React自定义Hook实现Vue中的watch功能，当依赖发生变化的时候，执行回调函数，并且支持了immediate和stop功能。
 
 ## Usage
 ```
