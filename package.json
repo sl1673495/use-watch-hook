@@ -1,8 +1,13 @@
 {
   "name": "use-watch-hook",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A React Hook that use to call the callback when the dep changed",
-  "keywords":["react", "react watch", "react hook watch", "hook watch"],
+  "keywords": [
+    "react",
+    "react watch",
+    "react hook watch",
+    "hook watch"
+  ],
   "main": "lib/index.js",
   "authors": {
     "name": "ssh",
@@ -13,7 +18,8 @@
     "test": "jest --coverage",
     "dev": "father doc dev",
     "build": "npm run test && npm run doc:build && father build",
-    "doc:build": "father doc build"
+    "doc:build": "father doc build",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "peerDependencies": {
     "react": "16.x"
@@ -25,6 +31,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/react-hooks": "^3.1.1",
     "@types/jest": "^24.0.23",
+    "coveralls": "^3.0.9",
     "father": "^2.16.0",
     "jest": "^24.9.0",
     "typescript": "^3.3.3"

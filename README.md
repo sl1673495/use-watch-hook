@@ -1,6 +1,14 @@
 # use-watch
 
+A React Hook that use to call the callback when the dep changed
+
 通过React自定义Hook实现Vue中的watch功能，当依赖发生变化的时候，执行回调函数，并且支持了immediate和stop功能。
+
+## Stability
+[![Coverage Status](https://coveralls.io/repos/github/sl1673495/use-watch/badge.svg?branch=master)](https://coveralls.io/github/sl1673495/use-watch?branch=master)
+
+## Doc
+https://sl1673495.github.io/use-watch
 
 ## Usage
 ```
@@ -37,12 +45,6 @@ const App: React.FC = () => {
 
 export default App
 ```
-
-## Doc
-https://sl1673495.github.io/use-watch
-
-## Test Coverage
-100%
 
 ## LICENSE
 

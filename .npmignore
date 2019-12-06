@@ -13,3 +13,4 @@ src
 test
 .babelrc
 .fatherrc.js
+.coveralls.yml
