@@ -1,6 +1,6 @@
 {
   "name": "use-watch-hook",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "React 自定义Hook实现Vue中的watch功能",
   "main": "lib/index.js",
   "authors": {
@@ -9,15 +9,23 @@
   },
   "repository": "/use-watch",
   "scripts": {
+    "test": "jest --coverage",
     "dev": "father doc dev",
-    "build": "father build",
+    "build": "npm run test && npm run doc:build && father build",
     "doc:build": "father doc build"
   },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/react-hooks": "^3.1.1",
+    "@types/jest": "^24.0.23",
     "father": "^2.16.0",
+    "jest": "^24.9.0",
     "typescript": "^3.3.3"
   },
   "license": "MIT"

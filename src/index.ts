@@ -1,19 +1,36 @@
-import React, {useEffect, useRef} from 'react';
+import { useEffect, useRef } from 'react';
 
-type Callback<T> = (current: T, prev: T | undefined) => void
+type Callback<T> = (prev: T | undefined) => void;
+type Config = {
+  immediate: boolean;
+};
 
-function useWatch<T>(dep: T, callback: Callback<T>) {
-  const prev = useRef<T>()
-  const inited = useRef(false)
+function useWatch<T>(dep: T, callback: Callback<T>, config: Config = { immediate: false }) {
+  const { immediate } = config;
+
+  const prev = useRef<T>();
+  const inited = useRef(false);
+  const stop = useRef(false);
 
   useEffect(() => {
-    if (!inited.current) {
-      inited.current = true
-    }else {
-      callback(dep, prev.current)
+    const execute = () => callback(prev.current);
+
+    if (!stop.current) {
+      if (!inited.current) {
+        inited.current = true;
+        if (immediate) {
+          execute();
+        }
+      } else {
+        execute();
+      }
+      prev.current = dep;
     }
-    prev.current = dep
-  }, [dep])
+  }, [dep]);
+
+  return () => {
+    stop.current = true;
+  };
 }
 
 export default useWatch;

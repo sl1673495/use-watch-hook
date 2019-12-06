@@ -3,7 +3,6 @@
 通过React自定义Hook实现Vue中的watch功能
 
 ## Usage
-
 ```
 npm i use-watch-hook -S
 ```
@@ -17,9 +16,9 @@ const App: React.FC = () => {
   const [prev, setPrev] = useState()
   const [count, setCount] = useState(0);
 
-  useWatch(count, (currentCount, prevCount) => {
+  const stop = useWatch(count, (prevCount) => {
     console.log('prevCount: ', prevCount);
-    console.log('currentCount: ', currentCount);
+    console.log('currentCount: ', count);
     setPrev(prevCount)
   })
 
@@ -31,16 +30,19 @@ const App: React.FC = () => {
       <p> 前一次的count是{prev}</p>
       {count}
       <button onClick={add} className="btn">+</button>
+      <button onClick={stop} className="btn">停止观察旧值</button>
     </div>
   )
 }
 
 export default App
-
 ```
 
 ## Doc
 https://sl1673495.github.io/use-watch
+
+## Test Coverage
+100%
 
 ## LICENSE
 
