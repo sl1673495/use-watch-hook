@@ -1,8 +1,8 @@
 {
-  "vendors.css": "/use-watch/static/css/vendors.25057bf728b67a5fff07.css",
-  "vendors.js": "/use-watch/static/js/vendors.83e1f55b.js",
-  "app.js": "/use-watch/static/js/app.25057bf728b67a5fff07.js",
-  "src-index.css": "/use-watch/static/css/src-index.25057bf728b67a5fff07.css",
-  "src-index.js": "/use-watch/static/js/src-index.cd9ec041.js",
-  "index.html": "/use-watch/index.html"
+  "vendors.css": "/use-watch-hook/static/css/vendors.08ca8297c3f0163d526f.css",
+  "vendors.js": "/use-watch-hook/static/js/vendors.f8216f42.js",
+  "app.js": "/use-watch-hook/static/js/app.08ca8297c3f0163d526f.js",
+  "src-index.css": "/use-watch-hook/static/css/src-index.08ca8297c3f0163d526f.css",
+  "src-index.js": "/use-watch-hook/static/js/src-index.cd9ec041.js",
+  "index.html": "/use-watch-hook/index.html"
 }
