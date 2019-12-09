@@ -1,6 +1,6 @@
 {
   "name": "use-watch-hook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React Hook that use to call the callback when the dep changed",
   "keywords": [
     "react",
@@ -13,11 +13,12 @@
     "name": "ssh",
     "email": "949589855@qq.com"
   },
-  "repository": "/use-watch",
+  "repository": "/uuse-watch-hook",
   "scripts": {
     "test": "jest --coverage",
     "dev": "father doc dev",
-    "build": "npm run test && npm run doc:build && father build",
+    "build": "npm run test && npm run doc:build && npm run doc:build && npm run lib:build",
+    "lib:build": "father build",
     "doc:build": "father doc build",
     "coveralls": "cat ./coverage/lcov.info | coveralls"
   },

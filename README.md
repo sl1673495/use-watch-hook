@@ -1,4 +1,4 @@
-# use-watch
+# use-watch-hook
 
 A React Hook that use to call the callback when the dep changed
 
@@ -8,7 +8,7 @@ A React Hook that use to call the callback when the dep changed
 [![Coverage Status](https://coveralls.io/repos/github/sl1673495/use-watch/badge.svg?branch=master)](https://coveralls.io/github/sl1673495/use-watch?branch=master)
 
 ## Doc
-https://sl1673495.github.io/use-watch
+https://sl1673495.github.io/use-watch-hook
 
 ## Usage
 ```
