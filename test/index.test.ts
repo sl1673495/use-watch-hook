@@ -29,13 +29,12 @@ describe('使用测试', () => {
 
     function useTest() {
       const [count, setCount] = useState(0);
-      const add = () => setCount(prev => prev + 1);
       useWatch(count, useWatchCallback, { immediate: true });
       return {
-        add,
         count,
       };
     }
+
     renderHook(() => useTest());
   });
 
